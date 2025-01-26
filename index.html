@@ -58,46 +58,28 @@
         <h3 class="title is-3 publication-title">
           for Expansive Text-to-Video Generation
         </h3>
-        <div class="is-size-5 publication-authors">
+        <!-- <div class="is-size-5 publication-authors">
           <div class="author-block">Anonymous </div>
         </div>
 
         <div class="is-size-5 publication-authors">
           <span class="author-block">Anonymous.</span>
-        </div>
+        </div> -->
+      </div>
+    </div>
+  </div>
+</section>
 
-        <div class="column has-text-centered">
-          <div class="publication-links">
-            <!-- PDF Link. -->
-            <span class="link-block">
-                <a href="https://arxiv.org/abs/2403.02827"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-            </span>
-            <!-- Code Link. -->
-            <span class="link-block">
-              <a href="https://github.com/RISE-T2V/RISE-T2V"
-                 class="external-link button is-normal is-rounded is-dark">
-                <span class="icon">
-                    <i class="fab fa-github"></i>
-                </span>
-                <span>Code</span>
-                </a>
-            </span>
-            <!-- YouTube Link. -->
-            <span class="link-block">
-              <a href="https://www.youtube.com/embed/GA01EsIJi-Y"
-                class="external-link button is-normal is-rounded is-dark">
-                <span class="icon">
-                    <i class="fab fa-youtube"></i>
-                </span>
-                <span>YouTube</span>
-              </a>
-            </span>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Most text-to-video (T2V) diffusion models depend on pre-trained text encoders for semantic alignment, yet they often fail to maintain video quality when provided with concise prompts rather than well-designed ones. The primary issue lies in their limited textual semantics understanding. Moreover, these text encoders cannot rephrase prompts online to better align with user intentions, which limits both the scalability and usability of the models. To address these challenges, we introduce RISE-T2V, which uniquely integrates the processes of prompt rephrasing and semantic feature extraction into a single and seamless step instead of two separate steps. RISE-T2V is universal and can be applied to various pre-trained LLMs and video diffusion models(VDMs), significantly enhancing their capabilities for T2V tasks. We propose an innovative module called the Rephrasing Adapter, enabling diffusion models to utilize text hidden states during the next token prediction of the LLM as a condition for video generation. By employing a Rephrasing Adapter, the video generation model can implicitly rephrase basic prompts into more comprehensive representations that better match the user's intent. Furthermore, we leverage the powerful capabilities of LLMs to enable video generation models to accomplish a broader range of T2V tasks. Extensive experiments demonstrate that RISE-T2V is a versatile framework applicable to different video diffusion model architectures, significantly enhancing the ability of T2V models to generate high-quality videos that align with user intent.
+          </p>
         </div>
       </div>
     </div>
@@ -107,13 +89,13 @@
 <section class="section">
   <div class="container is-max-desktop">
     <h2 class="title is-2, columns is-centered">Comparison</h2>
-    <p style="margin-bottom: 0.5em;">
+    <!-- <p style="margin-bottom: 0.5em;">
       xxx
-    </p>
-    <iframe width="960" height="540"  src="https://www.youtube.com/embed/GA01EsIJi-Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
+    </p> -->
+    <iframe width="960" height="540"  src="assets/RISE-T2V-480.mp4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
   </div>
 </section>
-
+<!-- 
 <section class="section">
   <div class="container is-max-desktop">
     <h2 class="title is-2, columns is-centered">Text-to-Video Examples</h2>
@@ -274,25 +256,12 @@
         </tr>
       </table>
 
-</section>
+</section> -->
 
 
-<section class="section">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            Most text-to-video (T2V) diffusion models depend on pre-trained text encoders for semantic alignment, yet they often fail to maintain video quality when provided with concise prompts rather than well-designed ones. The primary issue lies in their limited textual semantics understanding. Moreover, these text encoders cannot rephrase prompts online to better align with user intentions, which limits both the scalability and usability of the models. To address these challenges, we introduce RISE-T2V, which uniquely integrates the processes of prompt rephrasing and semantic feature extraction into a single and seamless step instead of two separate steps. RISE-T2V is universal and can be applied to various pre-trained LLMs and video diffusion models(VDMs), significantly enhancing their capabilities for T2V tasks. We propose an innovative module called the Rephrasing Adapter, enabling diffusion models to utilize text hidden states during the next token prediction of the LLM as a condition for video generation. By employing Rephrasing Adapter, the video generation model can implicitly rephrase basic prompts into more comprehensive representations that better match the user's intent. Furthermore, we leverage the powerful capabilities of LLMs enables video generation models to accomplish a broader range of T2V tasks. Extensive experiments demonstrate that RISE-T2V is a versatile framework applicable to different video diffusion model architectures, significantly enhancing the ability of T2V models to generate high-quality videos that align with user intent.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
-<section class="hero teaser">
+
+<!-- <section class="hero teaser">
   <div class="hero-body">
     <div class="container is-max-desktop">
       <div class="columns is-centered has-text-centered">
@@ -310,7 +279,7 @@
   </div>
   The framework of our tuning-free image-to-video method. It represents the inference pipeline, where the input image is noised into the initial latent and the predicted noise of the inflated 3D U-Net will be rectified during the denoising process. 
 </div>
-</section>
+</section> -->
 
 
 <<!-- section class="section" id="BibTeX">
